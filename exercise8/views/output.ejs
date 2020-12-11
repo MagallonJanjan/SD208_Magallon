@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <center>
+    <div class="card" style="width: 28rem; margin-top: 7%;">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwYjWmeBmDQVbxLLvT3y5jX83iW9d6qkPrA&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+            <% for(i=0; i<data.length;i++) { %>
+            <h3><%= data[i].firstname + " "+ data[i].lastname  %></h3>
+            <h4><%= data[i].email %></h4>
+            <% }%>
+        </div>
+    </div>
+</center>
+</body>
+
+</html>
